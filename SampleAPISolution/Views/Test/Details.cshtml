@@ -1,0 +1,92 @@
+﻿@model SampleAPISolution.Models.TestData
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TestData</h4>
+    <hr />
+    <table class="table-responsive table-bordered">
+        <tr>
+            <td>
+
+                @Html.DisplayNameFor(model => model.ApplicationId)
+
+            </td>
+            <td>
+                 @Html.DisplayFor(model => model.ApplicationId)
+           </td>
+
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayNameFor(model => model.Type)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Type)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                @Html.DisplayNameFor(model => model.Summary)
+            </td>
+
+            <td>
+                @Html.DisplayFor(model => model.Summary)
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                @Html.DisplayNameFor(model => model.Amount)
+            </td>
+
+            <td>
+                @Html.DisplayFor(model => model.Amount)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayNameFor(model => model.PostingDate)
+            </td>
+
+            <td>
+                @Html.DisplayFor(model => model.PostingDate)
+            </td>
+
+
+        </tr>
+
+
+        <tr>
+            <td>
+                @Html.DisplayNameFor(model => model.IsCleared)
+            </td>
+
+            <td>
+                @Html.DisplayFor(model => model.IsCleared)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                @Html.DisplayNameFor(model => model.ClearedDate)
+            </td>
+
+            <td>
+                @Html.DisplayFor(model => model.ClearedDate)
+            </td>
+        </tr>
+    </table>
+
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
